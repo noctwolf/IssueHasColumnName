@@ -10,7 +10,7 @@ namespace IssueHasColumnName
             using var context = new TableSplittingContext();
 
             var id = context.DetailedOrders.Select(f => f.Id).FirstOrDefault();
-            //sql SELECT TOP(1) [o].[IdFoo] FROM[Orders] AS[o]
+            //sql SELECT TOP(1) [o].[IdFoo] FROM [Orders] AS [o]
             Console.WriteLine(id);
 
             var name = context.DetailedOrders.Select(f => f.Name).FirstOrDefault();
